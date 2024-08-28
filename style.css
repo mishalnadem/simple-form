@@ -1,0 +1,532 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: rgb(5, 6, 51);
+    width: 100%;
+    height: 15vh;
+}
+
+.top-2 {
+    background-color: rgb(6, 180, 151);
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-2 img {
+    width: 50px;
+    margin: 15% 0 0 10%;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12%;
+    margin-bottom: 15%;
+}
+
+.span-1, .span-2 {
+    text-align: center;
+}
+
+.span-1 {
+    font-size: large;
+    font-weight: 600;
+}
+
+.span-2 {
+    font-size: small;
+    font-weight: 500;
+}
+
+.big {
+    display: flex;
+    gap: 0.5%;
+    margin: 1% 4% 0 68%;
+}
+
+.span-3, .span-4 {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.span-3 {
+    color: rgb(5, 6, 51);
+}
+
+.span-4 {
+    color: rgb(6, 180, 151);
+}
+
+.main {
+    background-color: rgb(5, 6, 51);
+    width: 93%;
+    color: white;
+    letter-spacing: 1px;
+    font-size: large;
+    font-weight: 300;
+    margin: 3% 0 2% 4%;
+    display: flex;
+    align-items: center;
+}
+
+.pre-main {
+    background-color: rgb(6, 180, 151);
+    width: 1vw;
+    height: 7vh;
+    margin-right: 9px;
+}
+
+.name,
+.dob,
+.address,
+.numb,
+.id,
+.occup,
+.status,
+.note-1,
+.note,
+.gender,
+.email,
+.retiree,
+.security,
+.single,
+.married,
+.divorce,
+.others,
+.yes,
+.no,
+.cont-name,
+.hom-numb,
+.relation,
+.mob-numb,
+.date,
+.mem-typ,
+.mem-num,
+.pay-typ,
+.staf-nam,
+.staf-sig,
+.male,
+.female {
+    font-size: large;
+    font-weight: 600;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "f-name f-name f-name"
+        "birth birth gender"
+        "addr-es addr-es addr-es"
+        "ph-no ph-no e-mail"
+        "id-no social-s social-s"
+        "stat stat stat"
+        "occu-p occu-p retir"
+        "space space space"
+        "not not not";
+    gap: 14px;
+    width: 94%;
+    margin-left: 4%;
+}
+
+.item {
+    font-size: large;
+    font-weight: 600;
+}
+
+.item1 {
+    grid-area: f-name;
+}
+
+.item2 {
+    grid-area: birth;
+}
+
+.item3 {
+    grid-area: gender;
+    margin-left: 2%;
+}
+
+.item4 {
+    grid-area: addr-es;
+}
+
+.item5 {
+    grid-area: ph-no;
+}
+
+.item6 {
+    grid-area: e-mail;
+}
+
+.item7 {
+    grid-area: id-no;
+}
+
+.item8 {
+    grid-area: social-s;
+}
+
+.item9 {
+    grid-area: stat;
+}
+
+.item10 {
+    grid-area: occu-p;
+}
+
+.item11 {
+    grid-area: retir;
+}
+
+.item12 {
+    grid-area: space;
+}
+
+.item13 {
+    grid-area: not;
+}
+
+#day,
+#month,
+#year,
+#address,
+#numb,
+#email,
+#iden,
+#security,
+#occup {
+    height: 3vh;
+    border: solid rgb(6, 180, 151);
+    border-width: 0 0 3px 0;
+    outline: none;
+}
+
+#name,
+#note {
+    background-color: rgb(224, 224, 224);
+    border-color: rgb(6, 180, 151);
+    border-style: solid;
+    outline: none;
+}
+
+#name {
+    width: 86.7%;
+    height: 4vh;
+    margin: 0% 0 0 4.1%;
+}
+
+#note {
+    width: 80.6vw;
+    height: 10vh;
+    margin: 0% 0 0 7%;
+}
+
+#day {
+    margin-left: 3.5%;
+}
+
+#day,
+#month,
+#year {
+    width: 25%;
+}
+
+#address {
+    width: 81.2vw;
+    margin-left: 5.3%;
+}
+
+#numb {
+    width: 50vw;
+    margin-left: 1.5%;
+}
+
+#email {
+    width: 24.3vw;
+    margin-left: 2.5%;
+}
+
+#iden {
+    width: 19vw;
+    margin-left: 9.4%;
+}
+
+#security {
+    width: 44.5vw;
+    margin-left: 2.5%;
+}
+
+#occup {
+    width: 50vw;
+    margin-left: 4%;
+}
+
+#note {
+    width: 80.6vw;
+    height: 10vh;
+    margin-left: 7%;
+    background-color: rgb(224, 224, 224);
+}
+
+input[type="checkbox"] {
+    border: 2px solid rgb(6, 180, 151);
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+}
+
+#single {
+    margin-left: 6.5%;
+}
+
+.custom-1 {
+    margin-left: 3%;
+}
+
+.custom-2 {
+    margin-left: 9%;
+}
+
+.slash {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.male,
+.female,
+.yes,
+.no {
+    margin-left: 3%;
+}
+
+.emergency {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "contact-name home-no"
+        "relationship mobile-no";
+    gap: 12px;
+    width: 93%;
+    margin-left: 4%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"] {
+    width: 32.5vw;
+    height: 3vh;
+    border: solid transparent;
+    border-bottom-color: rgb(6, 180, 151);
+    outline: none;
+}
+
+/* Specific margins */
+#cont-name {
+    margin-left: 3%;
+}
+
+#hom-numb {
+    margin-left: 6%;
+}
+
+#relation,
+#mob-numb {
+    margin-left: 5%;
+}
+
+#item14 {
+    grid-area: contact-name;
+}
+
+#item15 {
+    grid-area: home-no;
+}
+
+#item16 {
+    grid-area: relationship;
+}
+
+#item17 {
+    grid-area: mobile-no;
+}
+
+.office {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "date mem-typ"
+        "mem-num pay-typ"
+        "staf-nam staf-sig";
+    gap: 12px;
+    width: 93%;
+    margin-left: 4%;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"] {
+    width: 31vw;
+    height: 3vh;
+    border: solid transparent;
+    border-bottom-color: rgb(6, 180, 151);
+    outline: none;
+}
+
+/* Specific margins */
+#date {
+    margin-left: 18%;
+}
+
+#mem-typ {
+    margin-left: 4%;
+}
+
+#mem-num {
+    margin-left: 3%;
+}
+
+#pay-typ {
+    margin-left: 9%;
+}
+
+#staf-nam {
+    margin-left: 9%;
+}
+
+#staf-sig {
+    margin-left: 8%;
+}
+
+#item18 {
+    grid-area: date;
+}
+
+#item19 {
+    grid-area: mem-typ;
+}
+
+#item20 {
+    grid-area: mem-num;
+}
+
+#item21 {
+    grid-area: pay-typ;
+}
+
+#item22 {
+    grid-area: staf-nam;
+}
+
+#item23 {
+    grid-area: staf-sig;
+}
+
+.end-signature {
+    width: 16vw;
+    height: 20vh;
+    margin: 4% 0 0 80%;
+}
+
+#end-sign {
+    width: 15vw;
+    height: 10vh;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Whisper", serif;
+    /* Added serif fallback */
+    color: black;
+    border: solid transparent;
+    border-bottom-color: rgb(6, 180, 151);
+    outline: none;
+}
+
+.end-sign-label {
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    /* Optional: To add space between input and label */
+}
+
+.bottom,
+.bottom-2 {
+    width: 100%;
+    height: 3vh;
+}
+
+.bottom {
+    background-color: rgb(6, 180, 151);
+}
+
+.bottom-2 {
+    background-color: rgb(5, 6, 51);
+    height: 11vh;
+}
+
+.end-box {
+    background-color: rgb(6, 180, 151);
+    width: 28%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -13.8%;
+}
+
+.more,
+.thanks {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.location,
+.call,
+.globe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location img,
+.call img,
+.globe img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1220px){
+    .big{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 790px){
+    .big{
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 300;
+        /* flex-wrap: wrap; */
+    }
+}
+
+
